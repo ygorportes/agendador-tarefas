@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface TareasRepository  extends MongoRepository<TarefasEntity, String> {
+public interface TarefasRepository extends MongoRepository<TarefasEntity, String> {
 
     List<TarefasEntity> findByDataEventoBetween(LocalDateTime dataInicial, LocalDateTime dataFinal);
     List<TarefasEntity> findByEmailUsuario(String email);
